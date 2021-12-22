@@ -1,0 +1,3 @@
+[defaults]
+    preferred_host = Krakow
+    vpn_command_path = /opt/cisco/anyconnect/bin/vpn
