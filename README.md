@@ -31,11 +31,11 @@ pip3 install rumps py2app --user`
 ```
 python3 setup.py py2app
 ```
-3. After successfull build binary will be placed in [dist folder](./dist/pyanyconnect.app)
+1. After successfull build binary will be placed in the [dist folder](./dist)
 
 ### Running
 #### Script from console
-1. You can try it by just running `./pyanyconnect.py`. You may examine console output to see any issues
+1. You can try it by just running `./pyanyconnect.py` directly. You may examine console output for any issues.
 #### Binary on login
-1. Build binary, and copy it to /Applications folder
-1. Add it MacOS login items via: System Preferences -> Users & Groups -> Login items
+1. Build binary, and copy `./dist/pyanyconnect.app` to the `/Applications` folder
+2. Add it MacOS login items via: System Preferences -> Users & Groups -> Login items
