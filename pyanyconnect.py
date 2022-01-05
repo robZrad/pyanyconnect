@@ -67,7 +67,11 @@ y'''
     sp = subprocess.run(vpn_command, text=True, input=input, capture_output=True)
 
     if sp.returncode != 0 or 'error' in sp.stdout:
-        rumps.alert(f'Could not connect, output:\n{sp.stdout}')
+        rumps.alert(f'Could not connect. Check logs for details.')
+        print(sp.stdout)
+    elif 'Login failed.' in sp.stdout:
+        rumps.alert(f'Login failed, incorrect password? Check logs for details.')
+        print(sp.stdout)
     update_state(app, sender)
 
 
